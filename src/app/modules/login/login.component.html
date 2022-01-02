@@ -9,24 +9,24 @@
                     <div class="row">
                         <div class="col-lg-10 col-xl-7 mx-auto">
                             <h1 class="text-muted mb-4 text-center">Login</h1>
-                            <form novalidate>
+                            <form [formGroup]="loginForm" novalidate>
                                 <div class="form-group mb-3">
-                                    <input id="inputEmail" type="email" name="email"
+                                    <input id="inputEmail" type="email" name="email" formControlName="email"
                                         placeholder="Email address" required="" autofocus=""
                                         class="form-control rounded-pill border-0 shadow-sm px-4">
                                 </div>
                                 <div class="form-group mb-3">
-                                    <input id="inputPassword" type="password" name="password"
-                                        placeholder="Password" required=""
+                                    <input id="inputPassword" type="password" name="password" formControlName="password" 
+                                        placeholder="********" required=""
                                         class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
                                 </div>
-                                <div class="custom-control custom-checkbox mb-3">
+                                <!-- <div class="custom-control custom-checkbox mb-3">
                                     <input id="customCheck1" type="checkbox" class="custom-control-input"
                                         name="remember">
                                     <label for="customCheck1" class="custom-control-label"> Remember password</label>
-                                </div>
+                                </div> -->
                                 <button type="submit"
-                                    class="btn btn-success text-uppercase mb-2 rounded-pill shadow-sm">Sign in</button>
+                                    class="btn btn-success text-uppercase mb-2 rounded-pill shadow-sm" (click)="onLogin()">Sign in</button>
                             </form>
                         </div>
                     </div>

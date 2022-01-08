@@ -23,10 +23,10 @@ const routes: Routes = [
   //   redirectTo: 'login',
   //   pathMatch: 'full'
   // },
-  {
-    path: '**',
-    loadChildren: () => import('./modules/pageNotFound/page-not-found.module').then(m => m.PageNotFoundModule)
-  }
+  // {
+  //   path: '**',
+  //   loadChildren: () => import('./modules/pageNotFound/page-not-found.module').then(m => m.PageNotFoundModule)
+  // }
 ];
 
 @NgModule({

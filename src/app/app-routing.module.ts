@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { 
-    path: 'login', 
+  {
+    path: 'login',
     loadChildren: () => import('./modules/login/login.module').then(m => m.LoginModule)
   },
   {
@@ -23,10 +23,10 @@ const routes: Routes = [
   //   redirectTo: 'login',
   //   pathMatch: 'full'
   // },
-  {
-    path: '**',
-    loadChildren: () => import('./modules/pageNotFound/page-not-found.module').then(m => m.PageNotFoundModule)
-  }
+  // {
+  //   path: '**',
+  //   loadChildren: () => import('./modules/pageNotFound/page-not-found.module').then(m => m.PageNotFoundModule)
+  // }
 ];
 
 @NgModule({

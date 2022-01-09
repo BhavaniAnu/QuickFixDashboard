@@ -1,0 +1,10 @@
+.app-header{
+    position: fixed;
+    background-color: var(--bs-body-bg);
+    width: 100%;
+}
+.app-header .app-header__content .app-header-left{
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+}
